@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<label for="firstName">First Name: </label>
+		<input id="firstName" type="text" name="firstName" placeholder="Kailong" required>
+		<label for="lastName">Last Name: </label>
+		<input id="lastName" type="text" name="lastName" placeholder="Huang" required>
+		<br>
+		<label>
+			Male
+			<input type="radio" name="gender" value="male">
+		</label>
+		<label>
+			Female
+			<input type="radio" name="gender" value="female">
+		</label>
+		<label>
+			Other
+			<input type="radio" name="gender" value="other">
+		</label>
+		<br>
+		<label>
+			Email:
+			<input type="Email" name="email" placeholder="kailong9@gmail.com" required>
+		</label>
+		<label>
+			Password:
+			<input type="Password" name="password" pattern=".{5,10}" title="5 to 10 characters" required>
+		</label>
+		<br>
+		<label>
+			Birthday:
+			<select name="month">
+				<option selected hidden>Month</option>
+				<option>June</option>
+			</select>
+			<select name="day">
+				<option selected hidden>Day</option>
+				<option>20</option>
+			</select>
+			<select name="year">
+				<option selected hidden>Year</option>
+				<option>1999</option>
+			</select>
+		</label>
+		<br>
+		<label>
+			I agree to the terms and conditions
+			<input type="checkbox" name="agree" value="yes" required>
+		</label>
+		<br>
+		<input type="submit" name="">
+	</form>
+</body>
+</html>
+
+<!-- instead of using <br>, <div> might be a better way of grouping elements in a given line together  -->
