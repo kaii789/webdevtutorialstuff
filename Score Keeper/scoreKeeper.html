@@ -2,15 +2,20 @@
 <html>
 <head>
 	<title>Score Keeper Game</title>
+	<style>
+		.winner {
+			color : green;
+		}
+	</style>
 </head>
 <body>
 
 <h1 id="scoreUI">0 0</h1>
-<h3>Playing to: 5</h3>
-<input type="number" name="">
+<h3 id="maxUI">Playing to: 5</h3>
+<input type="number" name="" id="numInput">
 <button id="addPlayer1Score">Player One</button>
 <button id="addPlayer2Score">Player Two</button>
-<button>Reset</button>
+<button id="reset">Reset</button>
 
 <script type="text/javascript" src="score.js"></script>
 
